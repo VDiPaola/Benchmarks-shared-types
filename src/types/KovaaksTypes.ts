@@ -5,10 +5,17 @@ export type KovaaksPlaylistDataType = {
     data: KovaaksPlaylistType[];
 }
 
+export type KovaaksScenarioDataType = {
+    page: number;
+    max: number;
+    total: number;
+    data: KovaaksScenarioType[];
+}
+
 export type KovaaksPlaylistType = {
     playlistName: string;
     subscribers: number;
-    scenarioList: KovaaksScenarioType[];
+    scenarioList: KovaaksPlaylistScenarioType[];
     playlistCode: string;
     playlistId: string;
     published: string;
@@ -20,11 +27,24 @@ export type KovaaksPlaylistType = {
     playlistDuration: number;
 }
 
-export type KovaaksScenarioType = {
+export type KovaaksPlaylistScenarioType = {
     author: string;
     aimType: string;
     playCount: number;
     scenarioName: string;
     webappUsername: string;
     steamAccountName: string;
+}
+
+export type KovaaksScenarioType = {
+    leaderboardId: string;
+    scenarioName: string;
+    scenario: KovaaksScenarioMetaType
+}
+
+
+export type KovaaksScenarioMetaType = {
+    aimType: string;
+    authors: string[];
+    description: string;
 }
