@@ -1,3 +1,3 @@
-export * from "./types/BenchmarkTypes.ts";
-export * from "./types/DatabaseTypes.ts";
-export * from "./types/KovaaksTypes.ts";
+export * from "./types/BenchmarkTypes";
+export * from "./types/DatabaseTypes";
+export * from "./types/KovaaksTypes";
