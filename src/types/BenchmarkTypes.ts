@@ -19,7 +19,8 @@ export type ScenarioType = {
     id:string;
     name: string;
     rankings: RankingType[];
-    author: string;
+    author: string; //steam account name
+    leaderboardId?: string;
     type?: AimKindType;
 }
 

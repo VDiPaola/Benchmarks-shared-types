@@ -12,6 +12,13 @@ export type KovaaksScenarioDataType = {
     data: KovaaksScenarioType[];
 }
 
+export type KovaaksLeaderboardDataType = {
+    page: number;
+    max: number;
+    total: number;
+    data: KovaaksLeaderboardType[];
+}
+
 export type KovaaksPlaylistType = {
     playlistName: string;
     subscribers: number;
@@ -47,4 +54,31 @@ export type KovaaksScenarioMetaType = {
     aimType: string;
     authors: string[];
     description: string;
+}
+
+export type KovaaksLeaderboardType = {
+    rank: number;
+    steamId: string;
+    score: number;
+    steamAccountName: string;
+    webappUsername: string;
+    country: string;
+    kovaaksPlusActive: boolean;
+    attributes: KovaaksLeaderboardAttributesType;
+}
+
+export type KovaaksLeaderboardAttributesType = {
+    fov: number;
+    cm360: number;
+    epoch: number;
+    kills: number;
+    score: number;
+    avgFps: number;
+    avgTtk: number;
+    fovScale: string;
+    vertSens: number;
+    horizSens: number;
+    resolution: string;
+    sensScale: string;
+    accuracyDamage: number;
 }
