@@ -5,10 +5,15 @@ export type BenchmarkType = {
     scenarios: ScenarioType[];
     rankings: RankingType[];
     socials: SocialLinkType[];
-    rankingCalculation: string;
+    rankingCalculation: RankingCalculationType[];
     playlistDuration?: number;
     description?: string;
     typePercentages: AimKindPercentType;
+}
+
+export type RankingCalculationType = {
+    calculation: string;
+    rankName: string;
 }
 
 export type AimKindPercentType = {
