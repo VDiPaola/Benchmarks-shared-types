@@ -12,8 +12,9 @@ export type BenchmarkType = {
 }
 
 export type RankingCalculationType = {
-    calculation: string;
-    rankName: string;
+    condition: string;
+    value: number;
+    name: string;
 }
 
 export type AimKindPercentType = {
