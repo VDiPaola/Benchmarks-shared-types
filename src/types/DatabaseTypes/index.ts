@@ -3,3 +3,9 @@ export type DatabaseBenchmarkType = {
     name: string;
     data: string;
 }
+
+export type DatabaseScoreType = {
+    id: string;
+    userId: string;
+    score: number;
+}
