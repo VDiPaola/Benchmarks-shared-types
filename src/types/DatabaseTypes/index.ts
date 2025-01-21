@@ -4,19 +4,19 @@ export type DatabaseBenchmarkType = {
     data: string;
 }
 
-export type userScoreDBType = {
+export type DatabaseUserBenchmarkScoreType = {
     id: string;
     userId: string;
     score: number;
 }
 
-export type userDBType = {
+export type DatabaseUserType = {
     id: string;
     role: string;
     scores: string;
 }
 
-export type adminDBType = {
+export type DatabaseAdminType = {
     id: string;
     discordId: string;
     name: string;
