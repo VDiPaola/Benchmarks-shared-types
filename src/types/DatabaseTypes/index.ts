@@ -16,7 +16,6 @@ export type DatabaseUserBenchmarkScoreType = {
 
 export type DatabaseUserType = {
     id?: string;
-    user_id: string;
     discord_id: string;
     kovaaks_username: string;
     role: "user" | "admin";
