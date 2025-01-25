@@ -28,3 +28,10 @@ export type DatabaseAdminType = {
     name: string;
     created_at?: number;
 }
+
+export type DatabaseUserLeaderboardScoreType = {
+    id?: string;
+    score: number;
+    updated_at?: number;
+    created_at?: number;
+}
