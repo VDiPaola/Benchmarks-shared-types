@@ -20,6 +20,8 @@ export type DatabaseUserType = {
     kovaaks_username: string;
     role: "user" | "admin";
     created_at?: number;
+    socials: Record<string, string>;
+    country: string;
 }
 
 export type DatabaseAdminType = {
